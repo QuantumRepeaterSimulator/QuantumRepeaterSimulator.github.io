@@ -11,6 +11,8 @@ catalog: 	 true
 ## Entanglement Swapping
 The quantum repeater is able to transfer the property of entanglement within two generated pairs, to two members of those pairs which were not previously entangled, an operation known as entanglement swapping.
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/entanglement_swapping.png)
+
+## Quantum Memory
 Two entangled pairs are generated and their members propagated to both the final destinations
 and to an intermediate station, where a Bell-State Measurement (BSM) is performed after which the two remote members are then entangled. However, if the two sources are probabilistic then it is necessary to capture and store the pair members in quantum memories, which preserve their entangled state, until all four are ready to be read out.
 
