@@ -2,9 +2,9 @@
 layout:     post
 title:      Hadoop Installation Guidance for Dummies
 subtitle:   Step by Step Showing How To Install Hadoop in Fully Distributed Mode on AWS
-date:       2019-10-13
-author:     Susu
-header-img: img/posts20191013/header_bg.jpg
+<!-- date:       2019-10-13 -->
+<!-- author:     Susu -->
+header-img: img/header_bg.png
 catalog: 	 true
 tags:
     - Big Data
