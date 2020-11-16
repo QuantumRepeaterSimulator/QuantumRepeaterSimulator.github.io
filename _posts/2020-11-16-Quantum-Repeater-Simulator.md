@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Quantum Repeater Simulator
-header-img: img/header_bg.png
+header-img: img/header-bg.png
 catalog: 	 true
 <!-- tags:
     - Quantum Repeater -->
