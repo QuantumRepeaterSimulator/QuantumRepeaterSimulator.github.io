@@ -100,9 +100,9 @@ service-worker: true
 
 
 # Friends
-friends: [
-    # {
-    #     title: "Bobo",
-    #     href: "http://zbqiao.github.io/"
-    # }
-]
+# friends: [
+#     # {
+#     #     title: "Bobo",
+#     #     href: "http://zbqiao.github.io/"
+#     # }
+# ]
