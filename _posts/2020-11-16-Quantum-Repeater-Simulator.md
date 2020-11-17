@@ -7,7 +7,7 @@ catalog: 	 true
     - Quantum Repeater -->
 ---
 
-# Theoretical Base of Quantum Repeater
+<!-- # Theoretical Base of Quantum Repeater
 ## Entanglement Swapping
 The quantum repeater is able to transfer the property of entanglement within two generated pairs, to two members of those pairs which were not previously entangled, an operation known as entanglement swapping.
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/entanglement_swapping.png)
@@ -23,7 +23,7 @@ Two important properties of quantum memories that would function in quantum repe
 
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/repeater_prototype.png)
 Three key components are added to the previous prototye: 1) master controller which has a global view of the entanglement distribution process, 2) clock which helps provide high-resolution time synchronized network, 3) and software-defined network (SDN) controller which allows us to control the traffic of quantum network.
-
+ -->
 
 # Network Simulation
 
@@ -32,7 +32,7 @@ Mininet creates a realistic virtual network, running real kernel, switch and app
 
 ## Open Network Operating System (ONOS)
 The Open Network Operating System project is an open source  community hosted by The Linux Foundation. The goal of the project is to create a software-defined networking operating system for communications service providers that is designed for scalability, high performance and high availability.  ONOS adds SDN controller to quantum network. 
-
+<!-- 
 ## Network Topology
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/network_topology.png)
 
@@ -70,4 +70,4 @@ The following figure shows the How do delay affect entanglement distribution?
 ## How does quantum memory effectiveness affect entanglement distribution?
 The following figure shows the How does quantum memory effectiveness affect entanglement distribution?
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/qm_hold_time_vs_entanglements.png)
-- When distance is large and a lot of photons are lost during transferring, the longer quantum memory can saving a photons, the longer quantum memory can keep entanglement pairs at one side and wait another side for being paired, and vice versa. In such case, longer quantum memory holding photon time brings benefits to the entanglement distribution process.
+- When distance is large and a lot of photons are lost during transferring, the longer quantum memory can saving a photons, the longer quantum memory can keep entanglement pairs at one side and wait another side for being paired, and vice versa. In such case, longer quantum memory holding photon time brings benefits to the entanglement distribution process. -->
