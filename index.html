@@ -1,6 +1,5 @@
 ---
 layout: page
-description: " "
 ---
 
 {% for post in paginator.posts %}
@@ -9,22 +8,15 @@ description: " "
         <h2 class="post-title">
             {{ post.title }}
         </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
         <div class="post-content-preview">
-            <div class="col-md-5 order-md-1">
+            <!-- TODO: change later -->
+            <div class="col-md-5 order-md-1">  
                 <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="548" height="452" src="https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/repeater_prototype.png">
                 </img>
             </div>
-            <!-- {{ post.content | strip_html | truncate:200 }} -->
         </div>
     </a>
-   <!--  <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p> -->
+
 </div>
 <hr>
 {% endfor %}

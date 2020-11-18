@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
@@ -28,19 +24,10 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <!-- <div class="tags">
-                        {% for tag in page.tags %}
-                        <a style="color:#000000" class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div> -->
                     <h1 style="color:#000000">{{ page.title }}</h1>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
                     {% endcomment %}
-                    {% comment %} if page.subtitle {% endcomment %}
-                    <h2 style="color:#000000" class="subheading">{{ page.subtitle }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <!-- <span style="color:#000000" class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span> -->
                 </div>
             </div>
         </div>
@@ -62,7 +49,7 @@ layout: default
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG  LEFT</a>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>
@@ -72,90 +59,15 @@ layout: default
 
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-8 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 post-container">
 
 				{{ content }}
 
                 <hr style="visibility: hidden;">
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
-                        <span>{{page.previous.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
-                        <span>{{page.next.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-
-                {% if site.gitalk.enable %}
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-                <div id="gitalk-container"></div>
-
-                <script src="{{ site.baseurl }}/js/md5.min.js"></script>
-                <script type="text/javascript">
-                    var gitalk = new Gitalk({
-                    clientID: '{{site.gitalk.clientID}}',
-                    clientSecret: '{{site.gitalk.clientSecret}}',
-                    repo: '{{site.gitalk.repo}}',
-                    owner: '{{site.gitalk.owner}}',
-                    admin: ['{{site.gitalk.admin}}'],
-                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-                    id: md5(location.pathname),
-                    });
-                    gitalk.render('gitalk-container');
-                </script>
-                {% endif %}
-                <!-- Gitalk end -->
-
-                {% if site.disqus_username %}
-
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-
-                {% endif %}
-
             </div>  
 
-    
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                {% if site.featured-tags %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-        				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-        				{% endfor %}
-        			</div>
-                </section>
-                {% endif %}
-
-            </div>
         </div>
     </div>
 </article>
