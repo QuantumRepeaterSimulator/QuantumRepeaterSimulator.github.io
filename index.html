@@ -1,36 +1,110 @@
 ---
-layout: page
+layout: default
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        <div class="post-content-preview">
-            {% if post.description %}
-                {{ post.description }}
-            {% endif %}
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1 style="color:#000000">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                </div>
+            </div>
         </div>
-    </a>
+    </div>
+</header>
 
+
+<div class="container">
+    <div class="row">
+
+    <!-- Side Container -->
+        <div class="
+            col-lg-2 col-lg-offset-0
+            visible-lg-block
+            sidebar-container
+            catalog-container">
+            <div class="side-catalog">
+                <hr class="hidden-sm hidden-xs">
+                <h5>
+                    <a class="catalog-toggle" href="#">Projects</a>
+                </h5>
+                <ul class="catalog-body">
+                    {% for post in paginator.posts %}
+                    <li class="h1_nav">
+                        <a href="#{{ post.title }}" rel="nofollow">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+            </div>
+        </div>
+
+
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
+                {% for post in paginator.posts %}
+                <div class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title" id = "post-title">
+                            {{ post.title }}
+                        </h2>
+                        <div class="post-content-preview">
+                            {% if post.description %}
+                                {{ post.description }}
+                            {% endif %}
+                        </div>
+                    </a>
+
+                </div>
+                <hr>
+                {% endfor %}
+
+                <!-- Pager -->
+                {% if paginator.total_pages > 1 %}
+                <ul class="pager">
+                    {% if paginator.previous_page %}
+                    <li class="previous">
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+                    </li>
+                    {% endif %}
+                    {% if paginator.next_page %}
+                    <li class="next">
+                        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+                {% endif %}
+        </div>
+    </div>
 </div>
-<hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
+
+{% if site.anchorjs %}
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 {% endif %}
