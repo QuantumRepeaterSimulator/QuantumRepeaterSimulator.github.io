@@ -7,7 +7,7 @@ description: "<img class='bd-placeholder-img bd-placeholder-img-lg featurette-im
 
 ---
 
-<!-- # Theoretical Base of Quantum Repeater
+# Theoretical Base of Quantum Repeater
 ## Entanglement Swapping
 The quantum repeater is able to transfer the property of entanglement within two generated pairs, to two members of those pairs which were not previously entangled, an operation known as entanglement swapping.
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/entanglement_swapping.png)
@@ -23,7 +23,7 @@ Two important properties of quantum memories that would function in quantum repe
 
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/repeater_prototype.png)
 Three key components are added to the previous prototye: 1) master controller which has a global view of the entanglement distribution process, 2) clock which helps provide high-resolution time synchronized network, 3) and software-defined network (SDN) controller which allows us to control the traffic of quantum network.
- -->
+
 
 # Network Simulation
 
@@ -33,7 +33,7 @@ Mininet creates a realistic virtual network, running real kernel, switch and app
 ## Open Network Operating System (ONOS)
 The Open Network Operating System project is an open source  community hosted by The Linux Foundation. The goal of the project is to create a software-defined networking operating system for communications service providers that is designed for scalability, high performance and high availability.  ONOS adds SDN controller to quantum network. 
 
-<!-- 
+
 ## Network Topology
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/network_topology.png)
 
@@ -45,7 +45,7 @@ The Open Network Operating System project is an open source  community hosted by
 4. Based on received heralding messages, whenever there are two pairs of photon, master controller would signal BSM to perform Bell State Measurement.
 5. Bell Bell State Measurement results are sent back to master controller.  If Bell State Measurement succeed, then by now Node A and Node B have a pair of entanglements.
 
-# Simulation Results
+<!-- # Simulation Results
 ## Quantum Repeater performance
 The following figure shows the Quantum Repeater performance.
 
