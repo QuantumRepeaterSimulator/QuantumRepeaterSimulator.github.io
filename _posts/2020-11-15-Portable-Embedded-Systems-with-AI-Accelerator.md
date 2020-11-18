@@ -2,8 +2,8 @@
 layout:     post
 title:      Portable Embedded Systems with AI Accelerator
 header-img: img/header-bg.png
-id:	Portable_Embedded_Systems
-catalog: 	 false
+anchor:	Portable_Embedded_Systems
+catalog: 	 true
 description: "<img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' width='548' height='452' src='https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/portable_embedded_systems/jetson_nano.png'></img>"
 
 ---

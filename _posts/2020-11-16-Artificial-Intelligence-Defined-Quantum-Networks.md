@@ -2,7 +2,7 @@
 layout:     post
 title:      Artificial Intelligence Defined Quantum Networks
 header-img: img/header-bg.png
-id:	AI_Defined_Quantum_Networks
+anchor:	AI_Defined_Quantum_Networks
 catalog: 	 true
 description: "<img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' width='548' height='416' src='https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/AI_defined_network/sdn_architecture.png'></img>"
 
