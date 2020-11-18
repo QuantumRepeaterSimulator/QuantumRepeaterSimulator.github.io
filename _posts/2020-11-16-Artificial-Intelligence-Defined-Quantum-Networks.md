@@ -27,8 +27,8 @@ The Open Network Operating System (ONOS) project is an open source community hos
 
 
 # Artificial Intelligence Defined Quantum Networks
-## AI for Managing and Controlling Networks and automation
-### Challenge: complex operations in quantum networks
+### AI for Managing and Controlling Networks and automation
+#### Challenge: complex operations in quantum networks
 -   Reduce human-in-the-loop。
 -   Deep Reinforcement Learning in managing network infrastructure.
 -   Reduce the steep learning curve in network administration knowledge and expertise.
@@ -37,8 +37,8 @@ The Open Network Operating System (ONOS) project is an open source community hos
 - Introduce different rewards in AI-based optimization strategy and adapt to different environments, including long-term Quantum memory and short-term Quantum memory.
 
 
-## Pattern Recognition In Detecting Photon Propagation and Storage Errors
-### Challenge: High percentage Photon Failure Rate in Entanglement Establishment
+### Pattern Recognition In Detecting Photon Propagation and Storage Errors
+#### Challenge: High percentage Photon Failure Rate in Entanglement Establishment
 -   Identify the optical signatures of photon entanglement and predict Photon Failures and Bell state measurement (BSM).
 -   Proactively Introduce mitigation strategy (resending entanglement pairs, modifying the duty cycles of photon sources).
 -   Decision making in timing and controlling Bell statement measurement to enhance the success rate.
