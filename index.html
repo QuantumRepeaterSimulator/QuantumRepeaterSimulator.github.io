@@ -32,7 +32,7 @@ layout: default
                 <ul class="catalog-body">
                     {% for post in paginator.posts %}
                     <li class="h1_nav">
-                        <a href="#{{ post.title.hash }}" rel="nofollow">{{ post.title }}</a>
+                        <a href="#{{ post.id }}" rel="nofollow">{{ post.title }}</a>
                     </li>
                     {% endfor %}
             </div>
@@ -43,7 +43,7 @@ layout: default
                 {% for post in paginator.posts %}
                 <div class="post-preview">
                     <a href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" id = " {{ post.title.hash }}">
+                        <h2 class="post-title" id = " {{ post.id }}">
                             {{ post.title }}
                         </h2>
                         <div class="post-content-preview">
