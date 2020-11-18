@@ -31,7 +31,8 @@ Three key components are added to the previous prototye: 1) master controller wh
 Mininet creates a realistic virtual network, running real kernel, switch and application code, on a single machine.  Mininet is a great way to develop, share, and experiment with [OpenFlow](http://openflow.org/) and Software-Defined Networking systems.
 
 ## Open Network Operating System (ONOS)
-The Open Network Operating System project is an open source  community hosted by The Linux Foundation. The goal of the project is to create a software-defined networking operating system for communications service providers that is designed for scalability, high performance and high availability.  ONOS adds SDN controller to quantum network. 
+The Open Network Operating System (ONOS) project is an [open source](https://en.wikipedia.org/wiki/Open_source "Open source") community hosted by [The Linux Foundation](https://en.wikipedia.org/wiki/The_Linux_Foundation "The Linux Foundation"). The goal of the project is to create a [software-defined networking](https://en.wikipedia.org/wiki/Software-defined_networking "Software-defined networking") (SDN) operating system for [communications service providers](https://en.wikipedia.org/wiki/Communications_service_provider "Communications service provider") that is designed for scalability, high performance and high availability.
+
 
 
 ## Network Topology
@@ -45,7 +46,7 @@ The Open Network Operating System project is an open source  community hosted by
 4. Based on received heralding messages, whenever there are two pairs of photon, master controller would signal BSM to perform Bell State Measurement.
 5. Bell Bell State Measurement results are sent back to master controller.  If Bell State Measurement succeed, then by now Node A and Node B have a pair of entanglements.
 
-<!-- # Simulation Results
+# Simulation Results
 ## Quantum Repeater performance
 The following figure shows the Quantum Repeater performance.
 
@@ -71,4 +72,8 @@ The following figure shows the How do delay affect entanglement distribution?
 ## How does quantum memory effectiveness affect entanglement distribution?
 The following figure shows the How does quantum memory effectiveness affect entanglement distribution?
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/qm_hold_time_vs_entanglements.png)
-- When distance is large and a lot of photons are lost during transferring, the longer quantum memory can saving a photons, the longer quantum memory can keep entanglement pairs at one side and wait another side for being paired, and vice versa. In such case, longer quantum memory holding photon time brings benefits to the entanglement distribution process. -->
+- When distance is large and a lot of photons are lost during transferring, the longer quantum memory can saving a photons, the longer quantum memory can keep entanglement pairs at one side and wait another side for being paired, and vice versa. In such case, longer quantum memory holding photon time brings benefits to the entanglement distribution process.
+
+# References
+1. https://wiki.onosproject.org/display/ONOS/The+Network+Configuration+Service
+2. http://mininet.org/
