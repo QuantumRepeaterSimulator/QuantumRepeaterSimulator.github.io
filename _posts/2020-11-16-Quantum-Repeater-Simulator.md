@@ -3,9 +3,8 @@ layout:     post
 title:      Quantum Repeater Simulator
 header-img: img/header-bg.png
 catalog: 	 true
-description: "<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="548" height="452" src="https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/repeater_prototype.png"></img>"
-<!-- tags:
-    - Quantum Repeater -->
+description: "<img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' width='548' height='452' src='https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/repeater_prototype.png'></img>"
+
 ---
 
 <!-- # Theoretical Base of Quantum Repeater
