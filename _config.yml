@@ -36,3 +36,12 @@ kramdown:
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
+
+
+# # Friends
+# friends: [
+#     {
+#         title: "Quantum Information Sciences & Technology",
+#         href: "http://qit.physics.sunysb.edu/wordpress/"
+#     }
+# ]
