@@ -47,7 +47,7 @@ The Open Network Operating System (ONOS) project is an [open source](https://en.
 4. Based on received heralding messages, whenever there are two pairs of photon, master controller would signal BSM to perform Bell State Measurement.
 5. Bell Bell State Measurement results are sent back to master controller.  If Bell State Measurement succeed, then by now Node A and Node B have a pair of entanglements.
 
-# Simulation Results
+<!-- # Simulation Results
 ## Quantum Repeater performance
 The following figure shows the Quantum Repeater performance.
 
@@ -74,7 +74,7 @@ The following figure shows the How do delay affect entanglement distribution?
 The following figure shows the How does quantum memory effectiveness affect entanglement distribution?
 ![](https://raw.githubusercontent.com/QuantumRepeaterSimulator/QuantumRepeaterSimulator.github.io/main/img/quantum_repeater/qm_hold_time_vs_entanglements.png)
 - When distance is large and a lot of photons are lost during transferring, the longer quantum memory can saving a photons, the longer quantum memory can keep entanglement pairs at one side and wait another side for being paired, and vice versa. In such case, longer quantum memory holding photon time brings benefits to the entanglement distribution process.
-
+ -->
 # References
 1. https://wiki.onosproject.org/display/ONOS/The+Network+Configuration+Service
 2. http://mininet.org/
