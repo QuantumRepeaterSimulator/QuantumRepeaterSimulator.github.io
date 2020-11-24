@@ -45,7 +45,7 @@ The Open Network Operating System (ONOS) project is an [open source](https://en.
 2. Sources start to generating photons and send to quantum memory at Node A/ Node B, and two quantum memorys at BSM.
 3. After receiving photons and saving photons at quantum memory, heralding messages are send to master controller.
 4. Based on received heralding messages, whenever there are two pairs of photon, master controller would signal BSM to perform Bell State Measurement.
-5. Bell Bell State Measurement results are sent back to master controller.  If Bell State Measurement succeed, then by now Node A and Node B have a pair of entanglements.
+5. Bell State Measurement results are sent back to master controller.  If Bell State Measurement succeed, then by now Node A and Node B have a pair of entanglements.
 
 <!-- # Simulation Results
 ## Quantum Repeater performance
